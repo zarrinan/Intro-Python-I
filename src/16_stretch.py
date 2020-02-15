@@ -10,6 +10,6 @@ def isPrime(num):
     # Within a range of numbers from 2 to int(sqrt(num) - 1) with step=+1,
     # check if num is divisible by any of them
     for number in islice(count(2), int(sqrt(num) - 1)):
-        if n % number == 0:
+        if num % number == 0:
             return False
     return True
